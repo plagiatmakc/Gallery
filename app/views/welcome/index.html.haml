@@ -1,0 +1,26 @@
+%content
+  %h1 Welcome#index
+  %p Find me in app/views/welcome/index.html.haml
+  %strong.code#message Hello, World!
+
+.carousel.slide{:id=>"slide-images", :data => {:ride => "carousel"}}
+  %ol
+    %li.active{:data => {:target => "slide-images", :slide_to => "0"}}
+    %li{:data => {:target => "slide-images", :slide_to => "1"}}
+    %li{:data => {:target => "slide-images", :slide_to => "2"}}
+  .carousel-inner
+    .item.active
+      %img{:src => "@path slider1.jpg", :alt => ""}/
+    .item
+      %img{:src => "@path slider2.jpg", :alt => ""}/
+    .item
+      %img{:src => "@path slider3.jpg", :alt => ""}/
+    .item
+      %img{:src => "@path slider4.jpg", :alt => ""}/
+    .item
+      %img{:src => "@path slider5.jpg", :alt => ""}/
+
+  %a.left.carousel-control{:href => "#slide-images", :data => {:slide => "prev"}}
+    %span.glyphicon.glyphicon-chevron-left
+  %a.right.carousel-control{:href => "#slide-images", :data => {:slide => "next"}}
+    %span.glyphicon.glyphicon-chevron-right

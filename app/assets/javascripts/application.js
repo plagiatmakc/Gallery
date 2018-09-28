@@ -15,3 +15,8 @@
 //= require turbolinks
 //= require_tree .
 //= require jquery
+$(document).ready(function(){
+    $("#message").click(function(){
+        alert($(this).text());
+    });
+});
